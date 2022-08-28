@@ -1,0 +1,348 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#header {
+    min-height: 100vh;
+    width: 100%;
+}
+
+#header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+}
+
+#header .header-nav_logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+#header ul li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+#header ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+
+#header .header-nav_btn {
+    padding: 10px 15px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background-color: #ddd;
+    cursor: pointer;
+}
+
+#header .header-nav_btn:hover {
+    background-color: rgb(32, 19, 19);
+    color: #fff;
+}
+
+#header ul .act {
+    position: relative;
+}
+
+#header ul .act::after {
+    position: absolute;
+    content: "";
+    background-color: #fff;
+    width: 25px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+/* ---------Container--------- */
+#header .header-container {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+
+.header-container h1 {
+    font-size: 50px;
+    color: rgb(247, 59, 59);
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.header-container_searchBar {
+    width: 65%;
+    margin: 30px auto;
+    border-radius: 40px;
+    background-color: antiquewhite;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: left;
+}
+
+.header-container_searchBar form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-container_searchBar form input {
+    display: block;
+    min-width: 50px;
+    border: 0;
+    outline: none;
+    background-color: transparent;
+}
+
+.header-container_searchBar button {
+    background: #ff5361;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.header-container_searchBar button:hover {
+    opacity: 0.8;
+}
+
+
+
+/* -------Exclusives--------- */
+
+#exclusives {
+    width: 80%;
+    margin: 40px auto;
+}
+
+#exclusives h1 {
+    font-size: 40px;
+    color: #ff5361;
+    margin-bottom: 20px;
+}
+
+.ex-container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 30px;
+}
+
+.ex-container .exclusives-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ex-container div {
+    position: relative;
+}
+
+.ex-container .ex-container_content {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    text-align: center;
+}
+.ex-container_content h1,
+.ex-container_content p {
+    color: #fff;
+    font-size: 15px;
+}
+
+
+
+
+/* --------Trending Places-------- */
+#TrendingPlaces {
+    width: 80%;
+    margin: 30px auto;
+}
+
+#TrendingPlaces h1 {
+    font-size: 40px;
+    color: #ff5361;
+    margin-bottom: 20px;
+}
+
+#TrendingPlaces .TP-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 30px;
+}
+
+
+.TP-content .TP-content_img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.TP-content h2 {
+    font-size: 15px;
+}
+
+/* -------Call to action------- */
+
+#cta {
+    width: 80%;
+    margin: 40px auto;
+    position: relative;
+    height: 200px;
+}
+
+#cta div {
+    background-image: url("/asset/img/images/banner-2.png");
+    height: 180px;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+}
+
+#cta h1 {
+    font-size: 35px;
+    margin-left: 30px;
+}
+
+#cta p {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+#cta a {
+    padding: 10px 30px;
+    margin: 20px 0;
+    margin-left: 30px;
+    color: #fff;
+    background-color: #ff5361;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 20px
+}
+
+#cta a:hover {
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+/* ---------Travellers Stories------- */
+
+#Stories {
+    width: 80%;
+    margin: 40px auto;
+    margin-bottom: 0;
+}
+
+.stories-content h1 {
+    font-size: 35px;
+    color: #ff5361;
+    margin-bottom: 20px;
+}
+
+.stories-content_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 30px;
+}
+
+.stories-content_container div { 
+    position: relative;
+}
+
+.stories-content_container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.stories-content_container div p {
+    position: absolute;
+    text-align: center;
+    font-size: 26px;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* -------Button------ */
+#button {
+    width: 100%;
+    position: relative;
+    height: 100px;
+}
+
+#button button {
+    position: absolute;
+    left: 50%;
+    margin-top: 30px;
+    transform: translateX(-50%);
+    padding: 10px 40px;
+    color: #fff;
+    background-color: #ff5361;
+    font-size: 16px;
+    border: 0;
+    border-radius: 30px;
+}
+
+#button button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* ----------About Staybnb--------- */
+
+#about{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+#about h1 {
+    margin-bottom: 20px;
+    font: 30px;
+}
+
+#about p {
+    font-size: 16px;
+}
+
+/* ---------footer-------- */
+
+#footer {
+    width: 80%;
+    margin: 40px auto;
+    height: 200px;
+    text-align: center;
+}
+
+#footer div {
+    margin: 100px 0;
+}
+
+#footer div a{
+    font-size: 20px;
+    color: #ff5361;
+    padding: 10px 10px;
+}
+
+#footer div a:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+

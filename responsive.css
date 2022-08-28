@@ -1,0 +1,67 @@
+@media screen and (max-width: 740px) {
+    .header-nav_logo {
+        position: fixed;
+        top: 3%;
+        left: 5%;
+    }
+
+    #header nav {
+        display: inline-block;
+        position: fixed;
+        text-align: right;
+        background: #000;
+        top: 0;
+        width: 100%;
+        padding: 80px 6% 0;
+        max-height: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+        z-index: 100;
+    }
+
+    #header nav li {
+        margin: 10px 0;
+        display: block;
+    }
+
+    #header .fa-solid {
+        display: block;
+        position: fixed;
+        font-size: 24px;
+        top: 4%;
+        right: 5%;
+        color: #fff;
+    }
+
+    .header-nav ul .act::after {
+        left: -40px;
+        transform: translate(0, 50%);
+        bottom: 50%;
+    }
+
+    .hiddenmenu {
+        max-height: 300px;
+    }
+
+    .header-container h1 {
+        font-size: 40px;
+        color: #fff;
+    }
+    .header-container_searchBar {
+        position: relative;
+        width: 90%;
+    }
+
+    .header-container_searchBar button {
+        position: absolute;
+        bottom: 10px;
+        right: 20px;
+    }
+
+}
+
+@media (min-width:740px) {
+    #header nav .fa-solid {
+        display: none;
+    }
+}
